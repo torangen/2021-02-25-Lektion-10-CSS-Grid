@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first{
+    height: calc(366 / 2);
+    width: 100%;
+    background-color: red;
+    grid-area: first;
+}
+.second{
+    width: 100%;
+    height: 366px;
+    background-color: aquamarine;
+    grid-area: second;
+}
+.third{
+    width: 100%;
+    height: 122px;
+    background-color: yellowgreen;
+    grid-area: third;
+}
+.fourth{
+    width: 100%;
+    height: calc(366 / 2);
+    background-color: blue;
+    grid-area: fourth;
+}
+.fifth{
+    width: 100%;
+    height: 122px;
+    background-color: yellow;
+    grid-area: fifth;
+}
+.sixth{
+    width: 100%;
+    height: 122px;
+    background-color: orangered;
+    grid-area: sixth;
+}
+
+.seventh{
+    width: 100%;
+    height: 268px;
+    background-color: khaki;
+    grid-area: seventh;
+}
+.eighth{
+    height: calc(268px / 2); 
+    width: 100%;
+    background-color: orchid;
+    grid-area: eighth;
+}
+.ninth{
+    width: 100%;
+    height: 268px;
+    background-color: palegreen;
+    grid-area: ninth;
+}
+.tenth{
+    height: 268px; 
+    width: 100%;
+    background-color: salmon;
+    grid-area: tenth;
+}
+.eleventh{
+    width: 100%;
+    height: calc(268px / 2);
+    background-color: pink;
+    grid-area: eleventh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "first second second third third"
+    "fourth second second fifth fifth"
+    "fourth second second sixth sixth"
+    "seventh eighth ninth ninth tenth"
+    "seventh eleventh ninth ninth tenth";
+}
+
